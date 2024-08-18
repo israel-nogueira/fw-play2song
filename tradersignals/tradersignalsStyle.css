@@ -1,0 +1,44 @@
+@import '../../../../app/sources/less/theme-colors.css?v=1.0';
+.slider-grid {
+  width: 100%;
+}
+.html-par2,
+.html-par1 {
+  font-weight: bolder;
+}
+.btn-check {
+  display: none;
+}
+.dots-new-signal {
+  margin-bottom: 10px;
+}
+.card-body-cotacao {
+  background-color: #f7f7f7 !important;
+}
+.card-body-cotacao h5.fw-semibold.mb-0.lh-1.pt-2 {
+  font-size: 11px;
+}
+.card-body-cotacao .text-success,
+.card-body-cotacao .text-danger {
+  font-size: 10px;
+}
+.nav-item .buy-crypto {
+  background-color: #ebebeb !important;
+  color: #55b600;
+}
+.nav-item .sell-crypto {
+  background-color: #ebebeb !important;
+  color: #cf4040;
+}
+.nav-item .buy-crypto.active {
+  background-color: #6ba900 !important;
+  color: #ffffff;
+  border: solid 1px #469600;
+  font-weight: 800;
+}
+.nav-item .sell-crypto.active {
+  background-color: #bf2e2e !important;
+  color: #ffffff;
+  border: solid 1px #bf0000;
+  font-weight: 800;
+}

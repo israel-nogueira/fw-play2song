@@ -1,0 +1,257 @@
+html {
+  background: var(--bg-body-a);
+  background: -moz-radial-gradient(center, ellipse cover, var(--bg-body-a) 1%, var(--bg-body-b) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, var(--bg-body-a) 1%, var(--bg-body-b) 100%);
+  background: radial-gradient(ellipse at center, var(--bg-body-a) 1%, var(--bg-body-b) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@start', endColorstr='@stop', GradientType=1);
+}
+html ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html ::-webkit-scrollbar-track {
+  background-color: var(--WebkitScrollbarTrack) !important;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: var(--WebkitScrollbarThumb) !important;
+}
+html * {
+  scrollbar-color: var(--WebkitScrollbarThumb) var(--WebkitScrollbarTrack) !important;
+}
+html *::-webkit-scrollbar-thumb:horizontal {
+  background-color: var(--WebkitScrollbarThumb) !important;
+}
+html * {
+  scrollbar-color: var(--WebkitScrollbarThumb) var(--WebkitScrollbarTrack) !important;
+}
+html *::-ms-thumb:horizontal {
+  background-color: var(--WebkitScrollbarThumb) !important;
+}
+html table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before,
+html table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
+  background-color: var(--color12) !important;
+}
+html .dropdown-menu {
+  color: var(--header-color-a) !important;
+  border-color: var(--header-border-popup) !important;
+  box-shadow: 0 1rem 1.125rem var(--dropdown-shadow);
+  background: var(--bg-dropdown-a);
+  background: -moz-radial-gradient(center, ellipse cover, var(--bg-dropdown-a) 1%, var(--bg-dropdown-b) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, var(--bg-dropdown-a) 1%, var(--bg-dropdown-b) 100%);
+  background: radial-gradient(ellipse at center, var(--bg-dropdown-a) 1%, var(--bg-dropdown-b) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@start', endColorstr='@stop', GradientType=1);
+}
+html .dropdown-menu .related-app {
+  border-color: var(--bg-header-a) !important;
+  background-color: transparent !important;
+}
+html .dropdown-menu .related-app:hover {
+  border-color: var(--header-border-popup) !important;
+  background-color: transparent !important;
+}
+html .dropdown-menu .dropdown-divider {
+  border-color: var(--header-border-popup) !important;
+}
+html .dropdown-menu a {
+  color: var(--header-color-a) !important;
+}
+html .dropdown-menu a:hover {
+  background-color: var(--bg-header-hover);
+}
+html .dropdown-menu fill {
+  color: var(--bg-header-b);
+}
+html header {
+  background-color: var(--bg-header-a) !important;
+  background: var(--bg-header-a) !important;
+  background: -moz-linear-gradient(top, var(--bg-header-a) 0%, var(--bg-header-b) 100%) !important;
+  background: -webkit-linear-gradient(top, var(--bg-header-a) 0%, var(--bg-header-b) 100%) !important;
+  background: linear-gradient(to bottom, var(--bg-header-a) 0%, var(--bg-header-b) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--bg-header-a), endColorstr=var(--bg-header-b), GradientType=0) !important;
+}
+html header.app-header {
+  border: 0;
+}
+html header .main-header-dropdown {
+  background-color: var(--bg-card) !important;
+  background: var(--bg-dropdown-a);
+  background: -moz-radial-gradient(center, ellipse cover, var(--bg-dropdown-a) 1%, var(--bg-dropdown-b) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, var(--bg-dropdown-a) 1%, var(--bg-dropdown-b) 100%);
+  background: radial-gradient(ellipse at center, var(--bg-dropdown-a) 1%, var(--bg-dropdown-b) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@start', endColorstr='@stop', GradientType=1);
+}
+html header .dropdown-item:not(.active):hover,
+html header .dropdown-item:not(.active):focus,
+html header .dropdown-item:not(.active):active {
+  background-color: var(--branco-A20) !important;
+}
+html header a {
+  color: var(--header-color-a) !important;
+}
+html .page-title {
+  color: var(--card-title-color) !important;
+}
+html aside.app-sidebar {
+  border: 0;
+  background-color: var(--bg-sidebar-b);
+  background: var(--bg-sidebar-b);
+  background: -moz-linear-gradient(top, var(--bg-sidebar-b) 0%, var(--bg-sidebar-a) 100%);
+  background: -webkit-linear-gradient(top, var(--bg-sidebar-b) 0%, var(--bg-sidebar-a) 100%);
+  background: linear-gradient(to bottom, var(--bg-sidebar-b) 0%, var(--bg-sidebar-a) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--bg-sidebar-b), endColorstr=var(--bg-sidebar-a), GradientType=0);
+}
+html aside.app-sidebar .side-menu__item.active,
+html aside.app-sidebar .side-menu__item:hover {
+  background-color: var(--bg-header-hover) !important;
+}
+html aside.app-sidebar .side-menu__icon,
+html aside.app-sidebar .side-menu__label {
+  color: var(--sidebar-color-a) !important;
+  fill: var(--sidebar-color-a) !important;
+}
+html aside.app-sidebar .main-sidebar-header {
+  background-color: var(--bg-header-a);
+  background: var(--bg-header-a);
+  background: -moz-linear-gradient(top, var(--bg-header-a) 0%, var(--bg-header-b) 100%);
+  background: -webkit-linear-gradient(top, var(--bg-header-a) 0%, var(--bg-header-b) 100%);
+  background: linear-gradient(to bottom, var(--bg-header-a) 0%, var(--bg-header-b) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--bg-header-a), endColorstr=var(--bg-header-b), GradientType=0);
+  border: 0;
+}
+html aside.app-sidebar .main-menu .slide-menu {
+  background-color: var(--bg-sidebar-a) !important;
+  background: var(--bg-sidebar-a) !important;
+  background: -moz-linear-gradient(top, var(--bg-sidebar-a) 0%, var(--bg-sidebar-b) 100%) !important;
+  background: -webkit-linear-gradient(top, var(--bg-sidebar-a) 0%, var(--bg-sidebar-b) 100%) !important;
+  background: linear-gradient(to bottom, var(--bg-sidebar-a) 0%, var(--bg-sidebar-b) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--bg-sidebar-a), endColorstr=var(--bg-sidebar-b), GradientType=0) !important;
+}
+html aside.app-sidebar .main-menu .slide-menu .side-menu__item {
+  color: var(--sidebar-color-a) !important;
+}
+html aside.app-sidebar .main-menu .slide-menu .side-menu__item:hover .side-menu__label {
+  color: var(--sidebar-color-b) !important;
+}
+html aside.app-sidebar .main-menu .slide-menu .side-menu__item .side-menu__label {
+  color: var(--sidebar-color-a) !important;
+}
+@media (min-width: 992px) {
+  html .app-content {
+    min-height: calc(-31vh) !important;
+  }
+}
+html footer {
+  background-color: var(--bg-header-a);
+  background: var(--bg-header-a);
+  background: -moz-linear-gradient(top, var(--bg-header-a) 0%, var(--bg-header-b) 100%);
+  background: -webkit-linear-gradient(top, var(--bg-header-a) 0%, var(--bg-header-b) 100%);
+  background: linear-gradient(to bottom, var(--bg-header-a) 0%, var(--bg-header-b) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--bg-header-a), endColorstr=var(--bg-header-b), GradientType=0);
+}
+html footer .text-muted {
+  color: var(--header-color-b) !important;
+}
+html footer .text-dark {
+  color: var(--header-color-a) !important;
+}
+html .card,
+html .card.custom-card {
+  background-color: var(--bg-card) !important;
+}
+html .card .btn-light,
+html .card.custom-card .btn-light {
+  background-color: var(--btn-primary);
+  border-color: var(--btn-primary);
+  color: var(--btn-primary-txt);
+}
+html .card .card-title,
+html .card.custom-card .card-title {
+  color: var(--card-title-color);
+}
+html .card .card-title:before,
+html .card.custom-card .card-title:before {
+  background: var(--card-title-color) !important;
+}
+html .card .card-body,
+html .card.custom-card .card-body {
+  color: var(--text-muted);
+  background-color: var(--bg-card);
+}
+html .list-group-item {
+  color: var(--default-text-color);
+  background-color: var(--bg-card);
+  border: 1px solid var(--default-border);
+  padding: 0.75rem 1.25rem;
+}
+html .bg-primary {
+  background-color: var(--primary-color) !important;
+}
+html .form-select,
+html .form-select option,
+html .form-control {
+  border: solid 1px var(--input-border) !important;
+  color: var(--form-control-color) !important;
+  background-color: var(--form-control-bg) !important;
+}
+html .form-select:focus,
+html .form-select option:focus,
+html .form-control:focus {
+  border-color: var(--form-control-border-focus) !important;
+  background-color: var(--form-control-focus) !important;
+}
+html .btn.btn-primary-light {
+  background-color: var(--btn-primary) !important;
+  color: var(--btn-primary-txt) !important;
+}
+html .btn-check:active + .btn-primary,
+html .btn-check:checked + .btn-primary,
+html .btn-primary.show,
+html .btn-primary {
+  background-color: var(--btn-primary) !important;
+  border-color: var(--btn-primary) !important;
+  color: var(--btn-primary-txt) !important;
+}
+html .btn-check:active + .btn-primary:hover,
+html .btn-check:checked + .btn-primary:hover,
+html .btn-primary.show:hover,
+html .btn-primary:hover,
+html .btn-check:active + .btn-primary:active,
+html .btn-check:checked + .btn-primary:active,
+html .btn-primary.show:active,
+html .btn-primary:active,
+html .btn-check:active + .btn-primary:focus,
+html .btn-check:checked + .btn-primary:focus,
+html .btn-primary.show:focus,
+html .btn-primary:focus {
+  background-color: var(--btn-primary-hover) !important;
+  border-color: var(--btn-primary-hover) !important;
+  color: var(--btn-primary-txt-hover) !important;
+}
+html a.paginate_button {
+  background-color: var(--paginate-bg);
+  color: var(--paginate-bg-txt);
+}
+html a.paginate_button:hover {
+  background-color: var(--paginate-hover);
+  color: var(--paginate-hover-txt);
+}
+html[data-toggled] body img.desktop-logo,
+html[data-toggled] body.light-mode img.desktop-logo {
+  display: block;
+}
+html[data-toggled] body img.desktop-dark,
+html[data-toggled] body.light-mode img.desktop-dark {
+  display: none;
+}
+html[data-toggled] body.dark-mode img.desktop-logo {
+  display: none;
+}
+html[data-toggled] body.dark-mode img.desktop-dark {
+  display: block;
+}
+html[data-toggled] img.desktop-logo {
+  display: none !important;
+}
+html[data-toggled] img.desktop-dark {
+  display: none !important;
+}

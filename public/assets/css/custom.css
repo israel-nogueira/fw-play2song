@@ -1,0 +1,30 @@
+#scrollUp,
+.copyright-wrap,
+.slider-btn .btn,
+.second-header-btn .btn,
+.menu-area::before {
+    background: #001739;
+}
+.team-social a {
+    background: #00173910;
+}
+
+
+.team-social a:hover{
+    background: #002357;
+}
+
+.main-menu ul li:hover>a,
+.main-menu .has-sub ul li a:hover,
+.main-menu .has-sub a:hover{
+    color: #003380;
+}
+.team-social a,
+.main-menu ul li a::after{
+    color: #001739;
+}
+
+.main-menu .has-sub>ul,
+.btn{
+    border-color: #001739;
+}

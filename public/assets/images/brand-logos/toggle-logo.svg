@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="557" height="555" viewBox="0 0 557 555">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #18a88a;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Retângulo_1" data-name="Retângulo 1" class="cls-1" width="557" height="555" rx="20" ry="20"/>
+  <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M53.474,502.613l195.38-314.285,74.817,51.143L502.653,52.747,383.08,417.9l-95.113-80.372Z"/>
+</svg>

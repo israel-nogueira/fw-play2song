@@ -1,0 +1,220 @@
+@import  (reference) './../../../../app/sources/less/mixins.less';
+
+
+html{
+    
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background-color:var(--WebkitScrollbarTrack) !important; }
+    ::-webkit-scrollbar-thumb { background-color: var(--WebkitScrollbarThumb) !important; }
+    * { scrollbar-color: var(--WebkitScrollbarThumb) var(--WebkitScrollbarTrack) !important; }
+    *::-webkit-scrollbar-thumb:horizontal { background-color: var(--WebkitScrollbarThumb) !important; }
+    * { scrollbar-color: var(--WebkitScrollbarThumb) var(--WebkitScrollbarTrack) !important; }
+    *::-ms-thumb:horizontal { background-color: var(--WebkitScrollbarThumb) !important; }
+
+    table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before{
+            background-color: var(--color12) !important;
+    }
+    .dropdown-menu {
+        color: var(--header-color-a) !important;
+        border-color: var(--header-border-popup) !important;
+        box-shadow: 0 1rem 1.125rem var(--dropdown-shadow);
+        .related-app {
+            border-color: var(--bg-header-a) !important;
+            background-color: transparent !important;
+            &:hover {
+                border-color: var(--header-border-popup) !important;
+                background-color: transparent !important;
+            }
+        }
+        .bg-radial(var(--bg-dropdown-a), var(--bg-dropdown-b));
+
+        .dropdown-divider {
+            border-color: var(--header-border-popup) !important;
+        }
+        a {
+            color: var(--header-color-a) !important;
+            &:hover {
+                background-color: var(--bg-header-hover);
+            }
+        }
+        fill {
+            color: var(--bg-header-b);
+        }
+    }
+    .bg-radial(var(--bg-body-a), var(--bg-body-b));
+    header{
+        &.app-header{
+            border: 0;
+        }
+        .bg-linear(var(--bg-header-a), var(--bg-header-b)) !important;
+
+        .main-header-dropdown{
+            background-color: var(--bg-card) !important;
+            .bg-radial(var(--bg-dropdown-a), var(--bg-dropdown-b));
+        }
+        .dropdown-item:not(.active):hover,
+        .dropdown-item:not(.active):focus,
+        .dropdown-item:not(.active):active{
+            background-color: var( --branco-A20) !important;
+        }
+        a {
+            color: var(--header-color-a) !important;
+        }
+    }
+
+    .page-title {
+        color: var(--card-title-color) !important;
+    }
+
+    aside.app-sidebar {
+        border: 0;
+        .bg-linear(var(--bg-sidebar-b), var(--bg-sidebar-a));
+        .side-menu__item.active,
+        .side-menu__item:hover {
+            background-color: var(--bg-header-hover) !important;
+        }
+        .side-menu__icon,
+        .side-menu__label {
+            color: var(--sidebar-color-a) !important;
+            fill: var(--sidebar-color-a) !important;
+        }
+        .main-sidebar-header{
+            .bg-linear(var(--bg-header-a), var(--bg-header-b));
+            border: 0;
+        }
+
+        .main-menu {
+            .slide-menu {
+                .bg-linear(var(--bg-sidebar-a), var(--bg-sidebar-b)) !important;
+
+                .side-menu__item {
+                    color: var(--sidebar-color-a) !important;
+                    &:hover{
+                        .side-menu__label{color: var(--sidebar-color-b) !important;}
+                    }
+                    .side-menu__label{color: var(--sidebar-color-a) !important;}
+
+                }
+            }
+        }
+    }
+
+
+    @media (min-width: 992px) {
+        .app-content {
+            min-height: calc(100vh - 131px) !important;
+        }
+    }
+    
+
+    footer {
+        .bg-linear(var(--bg-header-a), var(--bg-header-b));
+        .text-muted {
+            color: var(--header-color-b) !important;
+        }
+        .text-dark {
+            color: var(--header-color-a) !important;
+        }
+    }
+
+    .card, .card.custom-card {
+        background-color: var(--bg-card) !important;
+
+        .btn-light {
+            background-color: var(--btn-primary);
+            border-color: var(--btn-primary);
+            color: var(--btn-primary-txt);
+        }
+
+
+
+        .card-title {
+            color: var(--card-title-color);
+
+            &:before {
+                background: var(--card-title-color) !important;
+            }
+        }
+
+        .card-body {
+            color: var(--text-muted);
+            background-color: var(--bg-card);
+        }
+    }
+
+    .list-group-item {
+        color: var(--default-text-color);
+        background-color: var(--bg-card);
+        border: 1px solid var(--default-border);
+        padding: 0.75rem 1.25rem;
+    }
+
+    .bg-primary {
+        background-color: var(--primary-color) !important;
+    }
+
+
+    .form-select,
+    .form-select option,
+    .form-control {
+        border: solid 1px var(--input-border) !important;
+        color: var(--form-control-color) !important;
+        background-color: var(--form-control-bg) !important;
+
+        &:focus {
+            border-color: var(--form-control-border-focus) !important;
+            background-color: var(--form-control-focus) !important;
+        }
+    }
+
+    .btn.btn-primary-light {
+        background-color: var(--btn-primary) !important;
+        color: var(--btn-primary-txt) !important;
+    }
+
+    .btn-check:active+.btn-primary,
+    .btn-check:checked+.btn-primary,
+    .btn-primary.show,
+    .btn-primary {
+        background-color: var(--btn-primary) !important;
+        border-color: var(--btn-primary) !important;
+        color: var(--btn-primary-txt) !important;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: var(--btn-primary-hover) !important;
+            border-color: var(--btn-primary-hover) !important;
+            color: var(--btn-primary-txt-hover) !important;
+        }
+
+    }
+    a.paginate_button {
+        background-color: var(--paginate-bg);
+        color: var(--paginate-bg-txt)
+    }
+    a.paginate_button:hover {
+        background-color: var(--paginate-hover);
+        color: var(--paginate-hover-txt)
+    }
+}
+
+
+html[data-toggled]{
+
+    body,body.light-mode {
+        img.desktop-logo {display: block;}
+        img.desktop-dark {display: none;}
+    }
+
+    body.dark-mode {
+        img.desktop-logo {display: none;}
+        img.desktop-dark {display: block;}
+    }
+    
+    img.desktop-logo {display: none !important}
+    img.desktop-dark {display: none !important}
+
+    
+}
+

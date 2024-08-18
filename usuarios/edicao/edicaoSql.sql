@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `edicao` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `UID` bigint(25) DEFAULT NULL,
+
+  -- `BIGINT` bigint(25) DEFAULT NULL,
+  -- `INT` int(11) DEFAULT NULL,
+  -- `VARCHAR` varchar(280) DEFAULT NULL,
+  -- `TEXT` text DEFAULT NULL,
+  -- `FLOAT` float(10,6) DEFAULT NULL,
+  -- `DATA` date DEFAULT NULL,
+  -- `BOLEAN` tinyint(1) NOT NULL DEFAULT 0,
+  -- `CRIADO_EM` timestamp NOT NULL DEFAULT current_timestamp()
+
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+DROP TRIGGER IF EXISTS `UID_edicao`;
+CREATE TRIGGER `UID_edicao` BEFORE INSERT ON `edicao`
+FOR EACH ROW SET new.UID=UUID_SHORT();
